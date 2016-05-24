@@ -7,8 +7,8 @@
 			RootStorage cubicRoots = new RootStorage();
 	    	cubicRoots.setSize(3);
 				
-	    		//We always make X0 = 1 
-	    		double approx = 1;
+	    	
+	    		double approx = 10;
 	    		
 				int i = 0;
 				double func;
@@ -37,7 +37,7 @@
 
 				//Store the first root:
 				cubicRoots.setRoot(1, value);
-				
+				System.out.println("Root 1: " +value);
 				//Use the first root to find the other two roots:
 				R = -(a1 + value) / 2;
 				DD = -3 * (value * value) - 2 * a1 * value + a1 * a1 - 4 * b1;
